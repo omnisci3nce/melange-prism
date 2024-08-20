@@ -1,0 +1,59 @@
+/**
+ * prism.js Melange theme
+ * Based on https://github.com/savq/melange-nvim
+ */
+
+ :root {
+  --color-bg: #292522;
+  --color-fg: #ECE1D7;
+  --color-bright-black: #867462;
+  --color-bright-blue: #A3A9CE;
+  --color-bright-cyan: #89B3B6;
+  --color-bright-green: #85B695;
+  --color-bright-magenta: #CF9BC2;
+  --color-bright-red: #D47766;
+  --color-bright-white: #ECE1D7;
+  --color-bright-yellow: #EBC06D;
+  --color-dark-black: #292522;
+  --color-dark-blue: #273142;
+  --color-dark-cyan: #253333;
+  --color-dark-green: #233524;
+  --color-dark-magenta: #422741;
+  --color-dark-red: #7D2A2F;
+  --color-dark-white: #403A36;
+  --color-dark-yellow: #8B7449;
+  --color-black: #34302C;
+  --color-blue: #7F91B2;
+  --color-cyan: #7B9695;
+  --color-green: #78997A;
+  --color-magenta: #B380B0;
+  --color-red: #BD8183;
+  --color-white: #C1A78E;
+  --color-yellow: #E49B5D;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+ color: var(--color-yellow);
+}
+
+.token.operator {
+  color: var(--color-red)
+}
+
+.token.comment,
+ .token.block-comment,
+ .token.prolog,
+ .token.doctype,
+ .token.cdata {
+   color: var(--color-white);
+ }
